@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px;
+  text-align: center;  /* Center text within elements */
+  background: linear-gradient(to bottom right, #f7f1e7, #e2d4c0);
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.text-area {
+  text-align: center; /* Center text within text-area divs */
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.color-box-tall {
+  width: 100px; /* Adjust as needed */
+  height: 30px; /* Adjust to match the approximate height of the text */
+  background-color: #ffffff; /* Example color */
+  margin: 20px auto; /* Center the box and add some margin */
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  text-align: center;
+  background: linear-gradient(to top left, #f9f7f2, #d9bfa8); /* Subtle gradient */
+  padding: 40px;
+  box-sizing: border-box; /* Ensure padding is included in the total width/height */
+}
+
+.start-screen h1 {
+  font-size: 2.5em; /* Make the welcome text larger */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333; /* Slightly darker text for contrast */
+}
+
+.start-screen p {
+  font-size: 1.2em;
+  margin-bottom: 30px; /* Space between text and button */
+  color: #5c412e; /* Matching theme color */
+}
+
+.start-screen button {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-screen button:hover {
+  background-color: #3e8e41;
+}
+
+
+.slider-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.button-container { 
+  margin-top: 10px; /* Add some space above the button */
+}
+
+.button-container button { 
+  padding: 10px 20px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #3e8e41;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.image-container {
+  display: flex; /* Ensures the color-box is contained within */
+  justify-content: center; /* Centers the color-box horizontally */
+  align-items: center; /* Centers the color-box vertically */
+  width: 400px; 
+  height: 400px; 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.color-box {
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  border: 2px solid #5c412e;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #5c412e;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #5c412e;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #5c412e;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
